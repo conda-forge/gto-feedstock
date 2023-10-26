@@ -1,11 +1,11 @@
 {% set name = "gto" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gto-{{ version }}.tar.gz
-  sha256: 2bd2f67d172133584a47b2f3db906efb13a24258e094a930c4a1d800310d89d9
+  sha256: 3772716fc978b3a261a24650ddd4cc1d87addb3cdb6b644beba6790b4f06615f
 build:
   entry_points:
     - gto = gto.cli:app
