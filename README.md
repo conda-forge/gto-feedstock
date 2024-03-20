@@ -149,7 +149,9 @@ Feedstock Maintainers
 
 * [@aguschin](https://github.com/aguschin/)
 * [@bgalvao](https://github.com/bgalvao/)
+* [@efiop](https://github.com/efiop/)
 * [@janjagusch](https://github.com/janjagusch/)
 * [@pmrowla](https://github.com/pmrowla/)
 * [@shcheklein](https://github.com/shcheklein/)
+* [@skshetry](https://github.com/skshetry/)
 
