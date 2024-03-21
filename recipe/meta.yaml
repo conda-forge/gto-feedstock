@@ -1,17 +1,17 @@
 {% set name = "gto" %}
-{% set version = "1.7.0" %}
+{% set version = "1.7.1" %}
 package:
   name: {{ name|lower }}
   version: {{ version }}
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/gto-{{ version }}.tar.gz
-  sha256: 363511279f5d8d19f8df7ff78299104579fd1d3efd1ea3d1fe3e689770798d03
+  sha256: 24100e735195c0d54539401f42804fc9042998276cdc4233f49f153fd38a7d75
 build:
   entry_points:
     - gto = gto.cli:app
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 requirements:
   host:
     - python >=3.8
