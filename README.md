@@ -11,7 +11,7 @@ Summary: Version and deploy your models following GitOps principles
 
 Development: https://github.com/iterative/gto
 
-Documentation: https://mlem.ai/doc/gto
+Documentation: https://dvc.org/doc/gto
 
 Current build status
 ====================
