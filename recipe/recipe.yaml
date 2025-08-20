@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: gto
-  version: 1.7.2
+  version: "1.8.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gto-${{ version }}.tar.gz
-  sha256: 98994f43d02ef6d4e77c4087b1c0c70a038e4a753a5583c23116246d33b89742
+  sha256: eeb95bbb99582232a9344923ebbb4158d9ee3102de9e782ff95f0e14123da228
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
