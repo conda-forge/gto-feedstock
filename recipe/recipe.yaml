@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: gto
-  version: "1.8.0"
+  version: 1.9.0
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/gto-${{ version }}.tar.gz
-  sha256: eeb95bbb99582232a9344923ebbb4158d9ee3102de9e782ff95f0e14123da228
+  sha256: 3beb5c652a98585ad083dbb6879a580ffe926271661d9b7a50e428cd591005ea
 
 build:
   number: 0
@@ -33,13 +33,13 @@ requirements:
     - scmrepo >=3,<4
     - typer >=0.4.1
     - rich
-    - pydantic >=1.9.0,<3,!=2.0.0
+    - pydantic >=2
     - ruamel.yaml
     - semver >=2.13.0
     - entrypoints
     - tabulate >=0.8.10
     - funcy
-
+    - pydantic-settings >=2
 tests:
   - python:
       imports:
