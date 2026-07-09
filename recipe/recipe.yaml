@@ -13,7 +13,7 @@ source:
   sha256: 3beb5c652a98585ad083dbb6879a580ffe926271661d9b7a50e428cd591005ea
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
@@ -31,7 +31,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - scmrepo >=3,<4
-    - typer >=0.4.1
+    - typer >=0.4.1,<0.26
+    - click >=8,<9
     - rich
     - pydantic >=2
     - ruamel.yaml
